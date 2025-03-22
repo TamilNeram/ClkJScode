@@ -1,0 +1,22 @@
+/* தமிழாக்கம் தமிழ் நேரம் ( https://TamilNeram.github.io ) */
+var இடை = 201;
+ம();
+
+function ம() {
+  //நாழிகை அசைவூட்டங்கள் உருவாக்கு
+  var இப்பொழுது       = new Date();
+  மணி = (இப்பொழுது.getHours() + 6)%24;
+  நிமையம் = இப்பொழுது.getMinutes();
+  நொடி = இப்பொழுது.getSeconds();
+  மொத்தம் = (நொடி + 60*நிமையம் + 3600*மணி)/2*5;
+  தற்பாரை = (மொத்தம்%60)* 6;
+  துளி = மொத்தம்/60;
+  நாழி = துளி/10;
+ துளி= (துளி%60)*6;
+   document.querySelector('.நாழிமுள்').style.transform = `rotate(${நாழி+90}deg)`
+  document.querySelector('.துளிமுள்').style.transform = `rotate(${துளி+90}deg)`
+  document.querySelector('.தற்பாரைமுள்').style.transform = `rotate(${தற்பாரை+90}deg)`
+}
+
+setInterval(ம, இடை);
+

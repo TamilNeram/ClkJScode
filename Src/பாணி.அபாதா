@@ -5,7 +5,7 @@ html,body{
             padding: 0;
             background-color:black;
         }
-        .clock-wrapper{
+        .மணி-கட்டு{
             position: absolute;
             top: 25%;
             right: 0;
@@ -20,14 +20,14 @@ html,body{
             box-shadow: 0 10px 15px rgba(0,0,0,.15),0 2px 2px rgba(0,0,0,.2);
 
         }
-        .clock-base{
+        .மணி-அடி{
             width: 250px;
             height: 250px;
             background-color: #eee;
             border-radius: 50%;
             box-shadow: 0 0 5px #eee;
         }
-        .click-indicator{
+        .சுற்று-எண்{
             position: absolute;
             z-index: 1;
             top: 15px;
@@ -35,54 +35,54 @@ html,body{
             width: 230px;
             height: 230px;
         }
-        .click-indicator div{
+        .சுற்று-எண் div{
             position: absolute;
             width: 2px;
             height: 4px;
             margin: 113px 114px;
             background-color: black;
         }
-        .click-indicator div:nth-child(1) {
-            transform: rotate(30deg) translateY(-113px);
+        .சுற்று-எண் div:nth-child(1) {
+            transform: rotate(25deg) translateY(-113px);
         }
-        .click-indicator div:nth-child(2) {
-            transform: rotate(60deg) translateY(-113px);
+        .சுற்று-எண் div:nth-child(2) {
+            transform: rotate(55deg) translateY(-113px);
         }
-        .click-indicator div:nth-child(3) {
-            transform: rotate(90deg) translateY(-113px);
+        .சுற்று-எண் div:nth-child(3) {
+            transform: rotate(85deg) translateY(-113px);
             background-color: red;
         }
-        .click-indicator div:nth-child(4) {
-            transform: rotate(120deg) translateY(-113px);
+        .சுற்று-எண் div:nth-child(4) {
+            transform: rotate(115deg) translateY(-113px);
         }
-        .click-indicator div:nth-child(5) {
-            transform: rotate(150deg) translateY(-113px);
+        .சுற்று-எண் div:nth-child(5) {
+            transform: rotate(145deg) translateY(-113px);
         }
-        .click-indicator div:nth-child(6) {
-            transform: rotate(180deg) translateY(-113px);
+        .சுற்று-எண் div:nth-child(6) {
+            transform: rotate(175deg) translateY(-113px);
             background-color: red;
         }
-        .click-indicator div:nth-child(7) {
-            transform: rotate(210deg) translateY(-113px);
+        .சுற்று-எண் div:nth-child(7) {
+            transform: rotate(205deg) translateY(-113px);
         }
-        .click-indicator div:nth-child(8) {
-            transform: rotate(240deg) translateY(-113px);
+        .சுற்று-எண் div:nth-child(8) {
+            transform: rotate(235deg) translateY(-113px);
         }
-        .click-indicator div:nth-child(9) {
-            transform: rotate(270deg) translateY(-113px);
+        .சுற்று-எண் div:nth-child(9) {
+            transform: rotate(265deg) translateY(-113px);
             background-color: red;
         }
-        .click-indicator div:nth-child(10) {
-            transform: rotate(300deg) translateY(-113px);
+        .சுற்று-எண் div:nth-child(10) {
+            transform: rotate(295deg) translateY(-113px);
         }
-        .click-indicator div:nth-child(11) {
-            transform: rotate(330deg) translateY(-113px);
+        .சுற்று-எண் div:nth-child(11) {
+            transform: rotate(325deg) translateY(-113px);
         }
-        .click-indicator div:nth-child(12) {
-            transform: rotate(360deg) translateY(-113px);
+        .சுற்று-எண் div:nth-child(12) {
+            transform: rotate(355deg) translateY(-113px);
             background-color: red;
         }
-        .clock-hour{
+        .நாழிகை-முள்{
             position: absolute;
             z-index: 2;
             top: 80px;
@@ -97,7 +97,7 @@ html,body{
             animation: rotate-hour 43200s linear infinite;
             
         }
-        .clock-minute{
+        .துளி-முள்{
             position: absolute;
             z-index: 3;
             top: 60px;
@@ -112,7 +112,7 @@ html,body{
             animation: rotate-minute 3600s linear infinite;
            
         }
-        .clock-second{
+        .தற்பாரை-முள்{
             position: absolute;
             z-index: 4;
             top: 20px;
@@ -126,7 +126,7 @@ html,body{
             animation: rotate-second 60s linear infinite;
             
         }
-        .clock-second:after{
+        .தற்பாரை-முள்:after{
             content: "";
             display: block;
             position: absolute;
@@ -139,7 +139,7 @@ html,body{
             border-radius: 50%;
             box-shadow: 0 0 3px rgba(0,0,0,.2);
         }
-        .clock-center{
+        .நடு-புள்ளி{
             position: absolute;
             z-index: 1;
             width: 150px;
@@ -150,7 +150,7 @@ html,body{
             border-radius: 50%;
             box-shadow: inset 0 -1px 0 #fafafa, inset 0 1px 0 #e3e3e3;
         }
-        .clock-center:after{
+        .நடு-புள்ளி:after{
             content: "";
             display: block;
             width: 20px;
